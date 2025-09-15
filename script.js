@@ -5,6 +5,8 @@ const container = document.querySelector(".container"),
   (removeIcon = container.querySelector(".search span"));
 let audio;
 
+
+
 function data(result, word) {
   if (result.title) {
     infoText.innerHTML = `Oops ;) we can't find <span>"${word}"</span>.`;
@@ -22,6 +24,8 @@ function data(result, word) {
 function playSound() {
   audio.play();
 }
+
+
 
 function search(word) {
   fetchApi(word);
